@@ -1,0 +1,62 @@
+<phyphox version="1.7">
+    <title>Predictive Maintenance</title>
+    <category>Quantathon Prototype</category>
+    <description>Live sensor stream for Smartphone Predictive Maintenance dashboard.</description>
+    <data-containers>
+        <!-- Accelerometer buffers -->
+        <container size="1000">acc_x</container>
+        <container size="1000">acc_y</container>
+        <container size="1000">acc_z</container>
+        <!-- Gyroscope buffers -->
+        <container size="1000">gyro_x</container>
+        <container size="1000">gyro_y</container>
+        <container size="1000">gyro_z</container>
+        <!-- Linear acceleration buffers -->
+        <container size="1000">lin_acc_x</container>
+        <container size="1000">lin_acc_y</container>
+        <container size="1000">lin_acc_z</container>
+        <!-- Magnetometer buffers -->
+        <container size="1000">mag_x</container>
+        <container size="1000">mag_y</container>
+        <container size="1000">mag_z</container>
+    </data-containers>
+    <input>
+        <sensor type="accelerometer" rate="10">
+            <output component="x">acc_x</output>
+            <output component="y">acc_y</output>
+            <output component="z">acc_z</output>
+        </sensor>
+        <sensor type="gyroscope" rate="10">
+            <output component="x">gyro_x</output>
+            <output component="y">gyro_y</output>
+            <output component="z">gyro_z</output>
+        </sensor>
+        <sensor type="linear_acceleration" rate="10">
+            <output component="x">lin_acc_x</output>
+            <output component="y">lin_acc_y</output>
+            <output component="z">lin_acc_z</output>
+        </sensor>
+        <sensor type="magnetic_field" rate="10">
+            <output component="x">mag_x</output>
+            <output component="y">mag_y</output>
+            <output component="z">mag_z</output>
+        </sensor>
+    </input>
+    <views>
+        <view title="Sensors Status">
+            <value label="Acc X">
+                <input>acc_x</input>
+            </value>
+            <value label="Acc Y">
+                <input>acc_y</input>
+            </value>
+            <value label="Acc Z">
+                <input>acc_z</input>
+            </value>
+            <graph label="Vibrations Graph" x="acc_x" y="acc_y">
+                <input axis="x">acc_x</input>
+                <input axis="y">acc_y</input>
+            </graph>
+        </view>
+    </views>
+</phyphox>
