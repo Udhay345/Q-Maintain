@@ -48,11 +48,11 @@ Using **Phyphox** network polling, live 3D sensor streams are transmitted over W
 
 | 📊 Real-Time Diagnostic Dashboard | 📈 Remaining Useful Life (RUL) Curve |
 |:---:|:---:|
-| ![Dashboard Overview](https://placehold.co/600x340/0f172a/38bdf8?text=Dashboard+Overview+%28screenshots%2Fdashboard.jpg%29) <br/>*Live 12-channel stream, state classification badge, and probability confidence gauge* | ![RUL Analytics](https://placehold.co/600x340/0f172a/38bdf8?text=RUL+Analytics+%28screenshots%2Frul_analytics.jpg%29) <br/>*Dynamic machine degradation curve, health score trend, and time-to-critical warnings* |
+| ![Dashboard Overview](screenshots/dashboard.jpg) <br/>*Live 12-channel stream, state classification badge, and probability confidence gauge* | ![RUL Analytics](screenshots/rul_analytics.jpg) <br/>*Dynamic machine degradation curve, health score trend, and time-to-critical warnings* |
 
 | 📲 Phyphox Phone Telemetry Setup | 🧪 Signal Feature Distributions |
 |:---:|:---:|
-| ![Phyphox Setup](https://placehold.co/600x340/0f172a/38bdf8?text=Phyphox+Stream+%28screenshots%2Fphyphox.jpg%29) <br/>*Mobile experiment interface and local IP REST configuration* | ![Feature Distributions](https://placehold.co/600x340/0f172a/38bdf8?text=Feature+Distributions+%28screenshots%2Ffeatures.jpg%29) <br/>*Root Mean Square (RMS), variance, and tri-axial spectral spread* |
+| ![Phyphox Setup](screenshots/phyphox.jpg) <br/>*Mobile experiment interface and local IP REST configuration* | ![Feature Distributions](screenshots/features.jpg) <br/>*Root Mean Square (RMS), variance, and tri-axial spectral spread* |
 
 </div>
 
